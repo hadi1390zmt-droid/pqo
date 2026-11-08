@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#05070d">
+  <meta name="description" content="SOLARIS — دانشنامه تعاملی منظومه شمسی | Interactive Solar System Atlas">
+  <title>SOLARIS — منظومه شمسی</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Vazirmatn:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="noise"></div>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="SOLARIS home">
+      <span class="brand-mark">✳</span><span>SOLARIS</span><small>FIELD ATLAS / 01</small>
+    </a>
+    <nav class="main-nav">
+      <a href="#explore" data-i18n="navExplore">کاوش</a>
+      <a href="#catalog" data-i18n="navCatalog">اطلس اجرام</a>
+      <a href="#physics" data-i18n="navPhysics">آزمایشگاه فیزیک</a>
+      <a href="#missions" data-i18n="navMissions">ماموریت‌ها</a>
+    </nav>
+    <div class="top-actions">
+      <button class="lang-switch" id="langToggle" aria-label="Switch language">EN</button>
+      <button class="icon-button" id="soundToggle" aria-label="Toggle ambient sound" title="Ambient sound"><span id="soundIcon">♫</span></button>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="live-dot"></span><span data-i18n="eyebrow">دانشنامه تعاملی منظومه شمسی</span><span class="eyebrow-line"></span><span class="mono">SOL / 001</span></div>
+        <h1><span data-i18n="heroLine1">فراتر از</span><br><em data-i18n="heroLine2">آسمانِ آشنا.</em></h1>
+        <p class="hero-description" data-i18n="heroDesc">از فوران‌های خورشیدی تا اقیانوس‌های پنهان زیر یخ؛ منظومه شمسی را با داده‌های علمی، مدل‌های تعاملی و روایت‌های اکتشافی دنبال کنید.</p>
+        <div class="hero-buttons">
+          <a class="button button-primary" href="#explore"><span data-i18n="beginExplore">شروع کاوش</span><span>↗</span></a>
+          <a class="button button-ghost" href="#catalog" data-i18n="viewAtlas">مشاهده اطلس</a>
+        </div>
+        <div class="hero-footnote"><span class="mono">8 PLANETS</span><span class="foot-separator">/</span><span data-i18n="heroFoot">یک ستاره · صدها جهان کوچک · بی‌شمار پرسش</span></div>
+      </div>
+      <div class="hero-art" aria-label="Solar system illustration">
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div><div class="orbit orbit-c"></div>
+        <div class="sun-glow"></div><div class="sun-core"></div>
+        <div class="planet p-mercury"></div><div class="planet p-venus"></div>
+        <div class="planet p-earth"><span></span></div><div class="planet p-mars"></div>
+        <div class="planet p-jupiter"></div><div class="planet p-saturn"><i></i></div>
+        <div class="planet p-uranus"></div><div class="planet p-neptune"></div>
+        <div class="art-label label-sun">SOL <small>G2V</small></div>
+        <div class="art-label label-earth">EARTH <small>1 AU</small></div>
+        <div class="art-crosshair">+</div>
+      </div>
+      <div class="hero-index mono">51° 28′ 40″ N<br>PLANETARY SYSTEM / MILKY WAY</div>
+      <div class="scroll-cue"><span></span><small data-i18n="scroll">برای کاوش اسکرول کنید</small></div>
+    </section>
+
+    <section class="ticker" aria-label="Solar system facts">
+      <div class="ticker-track">
+        <span>☉ <b>4.6 BILLION</b> <i data-i18n="tickerAge">سال قدمت تقریبی</i></span><span>✦ <b>149.6M KM</b> <i data-i18n="tickerAU">یک واحد نجومی</i></span><span>◉ <b>8 PLANETS</b> <i data-i18n="tickerPlanets">سیاره شناخته‌شده</i></span><span>⌁ <b>~1.3M EARTHS</b> <i data-i18n="tickerSun">حجم تقریبی خورشید نسبت به زمین</i></span>
+        <span>☉ <b>4.6 BILLION</b> <i data-i18n="tickerAge">سال قدمت تقریبی</i></span><span>✦ <b>149.6M KM</b> <i data-i18n="tickerAU">یک واحد نجومی</i></span><span>◉ <b>8 PLANETS</b> <i data-i18n="tickerPlanets">سیاره شناخته‌شده</i></span><span>⌁ <b>~1.3M EARTHS</b> <i data-i18n="tickerSun">حجم تقریبی خورشید نسبت به زمین</i></span>
+      </div>
+    </section>
+
+    <section class="section explore-section" id="explore">
+      <div class="section-heading">
+        <div><div class="eyebrow"><span class="section-number">01</span><span data-i18n="sectionExplore">سامانه زنده</span></div><h2 data-i18n="exploreTitle">در مدارِ <em>اکتشاف.</em></h2></div>
+        <p data-i18n="exploreIntro">یک نمای شماتیک از همسایگی کیهانی ما. سیاره‌ای را انتخاب کنید تا پرونده علمی آن باز شود. فاصله‌ها و اندازه‌ها در این نمای نمایشی هم‌مقیاس نیستند.</p>
+      </div>
+      <div class="explorer-shell">
+        <div class="explorer-topline"><span class="mono">SOLAR SYSTEM / LIVE MODEL</span><span class="model-status"><i></i><span data-i18n="modelStatus">مدل تعاملی فعال</span></span></div>
+        <div class="solar-stage" id="solarStage">
+          <canvas id="solar3d" aria-label="Interactive three-dimensional solar system"></canvas><div class="stage-stars"></div><div class="stage-sun"></div>
+          <div class="stage-orbit o1"><button class="stage-planet mercury" data-planet="mercury" aria-label="Mercury"></button></div>
+          <div class="stage-orbit o2"><button class="stage-planet venus" data-planet="venus" aria-label="Venus"></button></div>
+          <div class="stage-orbit o3"><button class="stage-planet earth" data-planet="earth" aria-label="Earth"></button></div>
+          <div class="stage-orbit o4"><button class="stage-planet mars" data-planet="mars" aria-label="Mars"></button></div>
+          <div class="stage-orbit o5"><button class="stage-planet jupiter" data-planet="jupiter" aria-label="Jupiter"></button></div>
+          <div class="stage-orbit o6"><button class="stage-planet saturn" data-planet="saturn" aria-label="Saturn"></button></div>
+          <div class="stage-orbit o7"><button class="stage-planet uranus" data-planet="uranus" aria-label="Uranus"></button></div>
+          <div class="stage-orbit o8"><button class="stage-planet neptune" data-planet="neptune" aria-label="Neptune"></button></div>
+          <div class="stage-caption"><span class="mono">HELIOCENTRIC VIEW</span><span data-i18n="notToScale">نمای شماتیک · نه در مقیاس</span></div>
+          <button class="pause-button" id="orbitToggle"><span>Ⅱ</span><span data-i18n="pauseMotion">توقف حرکت</span></button>
+        </div>
+        <aside class="planet-panel" id="planetPanel">
+          <div class="panel-kicker"><span class="mono" id="planetCode">PLANET / 03</span><span class="panel-dot"></span></div>
+          <div class="planet-visual" id="planetVisual"><div class="visual-orb earth-orb"></div></div>
+          <div class="planet-title-row"><div><div class="planet-type" id="planetType">TERRESTRIAL PLANET</div><h3 id="planetName">زمین</h3></div><span class="planet-symbol" id="planetSymbol">⊕</span></div>
+          <p class="planet-summary" id="planetSummary">تنها جهان شناخته‌شده‌ای که میزبان حیات است.</p>
+          <div class="quick-stats">
+            <div><small data-i18n="statDiameter">قطر میانگین</small><b id="statDiameter">12,742 km</b></div>
+            <div><small data-i18n="statDay">طول روز</small><b id="statDay">23h 56m</b></div>
+            <div><small data-i18n="statYear">طول سال</small><b id="statYear">365.25 d</b></div>
+            <div><small data-i18n="statMoons">تعداد قمر</small><b id="statMoons">1</b></div>
+          </div>
+          <button class="text-link" id="planetDetails"><span data-i18n="openDossier">باز کردن پرونده علمی</span><b>↗</b></button>
+        </aside>
+      </div>
+      <div class="planet-selector" id="planetSelector" aria-label="Select a planet"></div>
+    </section>
+
+    <section class="section catalog-section" id="catalog">
+      <div class="section-heading">
+        <div><div class="eyebrow"><span class="section-number">02</span><span data-i18n="sectionCatalog">فهرست کیهانی</span></div><h2 data-i18n="catalogTitle">جهان‌های <em>همسایه.</em></h2></div>
+        <p data-i18n="catalogIntro">از سیارات سنگی نزدیک خورشید تا غول‌های یخی دوردست. برای مشاهده اطلاعات پایه، هر جرم را انتخاب کنید.</p>
+      </div>
+      <div class="catalog-toolbar">
+        <div class="filter-tabs" id="filterTabs">
+          <button class="filter-tab active" data-filter="all" data-i18n="filterAll">همه</button>
+          <button class="filter-tab" data-filter="terrestrial" data-i18n="filterRocky">سنگی</button>
+          <button class="filter-tab" data-filter="giant" data-i18n="filterGiant">غول‌ها</button>
+          <button class="filter-tab" data-filter="dwarf" data-i18n="filterDwarf">کوتوله‌ها</button>
+        </div>
+        <label class="search-box"><span>⌕</span><input id="catalogSearch" type="search" data-i18n-placeholder="searchPlaceholder" placeholder="جست‌وجوی جرم آسمانی..."></label>
+      </div>
+      <div class="planet-grid" id="planetGrid"></div>
+      <div class="catalog-note"><span>ⓘ</span><span data-i18n="catalogNote">مقادیر تقریبی‌اند؛ برخی ویژگی‌ها مانند جو و تعداد قمرها با مشاهدات تازه به‌روزرسانی می‌شوند.</span></div>
+    </section>
+
+    <section class="physics-section" id="physics">
+      <div class="section section-heading physics-heading">
+        <div><div class="eyebrow"><span class="section-number">03</span><span data-i18n="sectionPhysics">قوانین طبیعت</span></div><h2 data-i18n="physicsTitle">جهان با <em>قانون</em> می‌رقصد.</h2></div>
+        <p data-i18n="physicsIntro">مدارها، سقوط‌ها و حرکت سیارات را می‌توان با چند اصل بنیادی توصیف کرد. پارامترها را تغییر دهید و نتیجه را ببینید.</p>
+      </div>
+      <div class="physics-grid">
+        <article class="physics-card gravity-card">
+          <div class="card-top"><span class="mono">LAB / 01</span><span class="card-icon">⌁</span></div>
+          <h3 data-i18n="gravityTitle">گرانش سطحی</h3>
+          <p data-i18n="gravityDesc">وزن یک جسم ۷۰ کیلوگرمی روی هر جهان چقدر است؟ جرم و جرم آسمانی را تغییر دهید.</p>
+          <div class="control-group"><label for="massSlider"><span data-i18n="objectMass">جرم جسم</span><b><span id="massValue">70</span> kg</b></label><input type="range" min="1" max="200" value="70" id="massSlider"></div>
+          <div class="control-group"><label for="gravitySelect"><span data-i18n="destination">مقصد</span></label><select id="gravitySelect"></select></div>
+          <div class="result-band"><div><small data-i18n="yourWeight">وزن شما در این جهان</small><strong id="weightResult">686.5 <i>N</i></strong></div><span class="result-arrow">↗</span></div>
+          <div class="formula">F = m × g <small data-i18n="newtonFormula">قانون دوم نیوتن</small></div>
+        </article>
+        <article class="physics-card orbit-card">
+          <div class="card-top"><span class="mono">LAB / 02</span><span class="card-icon">◎</span></div>
+          <h3 data-i18n="orbitTitle">سرعت مداری</h3>
+          <p data-i18n="orbitDesc">سرعت دایره‌ای ایده‌آل در فاصله‌ای از مرکز زمین را محاسبه کنید؛ اثر جو و ناهمگنی جرم نادیده گرفته شده است.</p>
+          <div class="control-group"><label for="altitudeSlider"><span data-i18n="altitude">ارتفاع از سطح زمین</span><b><span id="altitudeValue">400</span> km</b></label><input type="range" min="160" max="36000" step="40" value="400" id="altitudeSlider"></div>
+          <div class="result-band"><div><small data-i18n="orbitalSpeed">سرعت مداری دایره‌ای</small><strong id="speedResult">7.67 <i>km/s</i></strong></div><span class="result-arrow">↗</span></div>
+          <div class="formula">v = √(GM / r) <small data-i18n="visViva">تقریب مدار دایره‌ای</small></div>
+        </article>
+        <article class="physics-card kepler-card">
+          <div class="card-top"><span class="mono">FIELD NOTE / 03</span><span class="card-icon">⌖</span></div>
+          <h3 data-i18n="keplerTitle">قانون سوم کپلر</h3>
+          <p data-i18n="keplerDesc">هرچه مدار سیاره از خورشید دورتر باشد، دوره گردش آن طولانی‌تر است.</p>
+          <div class="kepler-visual"><div class="kepler-sun"></div><div class="kepler-orbit"><i></i></div><div class="kepler-label">a³ / T² ≈ constant</div></div>
+          <div class="kepler-facts"><div><small data-i18n="earthYear">سال زمین</small><b>1.00 <i>year</i></b></div><div><small data-i18n="marsYear">سال مریخ</small><b>1.88 <i>years</i></b></div><div><small data-i18n="jupiterYear">سال مشتری</small><b>11.86 <i>years</i></b></div></div>
+          <div class="formula">T² ∝ a³ <small data-i18n="keplerLaw">برای اجرام در مدار خورشید</small></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section missions-section" id="missions">
+      <div class="section-heading">
+        <div><div class="eyebrow"><span class="section-number">04</span><span data-i18n="sectionMissions">ردپای انسان</span></div><h2 data-i18n="missionsTitle">کاوشگرانی در <em>تاریکی.</em></h2></div>
+        <p data-i18n="missionsIntro">ربات‌ها و فضاپیماها چشم‌ها و دست‌های ما در جهان‌های دور بوده‌اند. چند ماموریت شاخص را مرور کنید.</p>
+      </div>
+      <div class="mission-list">
+        <article class="mission-row"><div class="mission-year mono">1977</div><div class="mission-emblem">◉</div><div class="mission-info"><h3>Voyager 1 & 2</h3><p data-i18n="voyagerDesc">کاوش غول‌های بیرونی و سفر به فضای میان‌ستاره‌ای.</p></div><span class="mission-status" data-i18n="missionInterstellar">در فضای میان‌ستاره‌ای</span></article>
+        <article class="mission-row"><div class="mission-year mono">1997</div><div class="mission-emblem">◌</div><div class="mission-info"><h3>Cassini–Huygens</h3><p data-i18n="cassiniDesc">بررسی زحل، حلقه‌ها و فرود کاوشگر هویگنس بر تایتان.</p></div><span class="mission-status" data-i18n="missionComplete">پایان‌یافته · ۲۰۱۷</span></article>
+        <article class="mission-row"><div class="mission-year mono">2011</div><div class="mission-emblem">✧</div><div class="mission-info"><h3>Juno</h3><p data-i18n="junoDesc">مطالعه گرانش، میدان مغناطیسی و ساختار درونی مشتری.</p></div><span class="mission-status" data-i18n="missionActive">ماموریت تمدیدشده</span></article>
+        <article class="mission-row"><div class="mission-year mono">2021</div><div class="mission-emblem">◇</div><div class="mission-info"><h3>James Webb Space Telescope</h3><p data-i18n="webbDesc">رصد جو سیارات فراخورشیدی و اجرام سرد منظومه شمسی.</p></div><span class="mission-status" data-i18n="missionActive">در حال فعالیت</span></article>
+      </div>
+    </section>
+
+    <section class="closing-cta">
+      <div class="cta-stars"></div><div class="cta-orb"></div>
+      <div class="eyebrow"><span class="live-dot"></span><span data-i18n="closingEyebrow">کاوش تازه آغاز شده است</span></div>
+      <h2 data-i18n="closingTitle">پرسش بعدی، <em>جهان بعدی.</em></h2>
+      <p data-i18n="closingDesc">دانش ما از منظومه شمسی پیوسته در حال گسترش است. هر کشف، نقشه کیهانی ما را دقیق‌تر می‌کند.</p>
+      <a href="#explore" class="button button-primary"><span data-i18n="returnExplore">بازگشت به کاوش</span><span>↑</span></a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="brand footer-brand" href="#home"><span class="brand-mark">✳</span><span>SOLARIS</span></a>
+    <p data-i18n="footerText">ساخته‌شده برای کنجکاوی؛ نه جایگزین داده‌های تخصصی و به‌روز پژوهشی.</p>
+    <div class="footer-right"><span class="mono">EDITION 01 / 2026</span><a href="#home" data-i18n="backTop">بازگشت به بالا ↑</a></div>
+  </footer>
+
+  <dialog id="dossierDialog" class="dossier-dialog">
+    <button class="dialog-close" id="dialogClose" aria-label="Close">×</button>
+    <div class="dialog-content">
+      <div class="eyebrow"><span class="section-number">DOSSIER</span><span id="dialogCode">PLANET / 03</span></div>
+      <div class="dialog-planet-art" id="dialogPlanetArt"></div>
+      <div class="dialog-title"><div><small id="dialogType">TERRESTRIAL PLANET</small><h2 id="dialogName">Earth</h2></div><span id="dialogSymbol">⊕</span></div>
+      <p id="dialogDescription"></p>
+      <div class="dialog-stats" id="dialogStats"></div>
+      <div class="dialog-science"><h3 data-i18n="scienceNotes">یادداشت علمی</h3><p id="dialogScience"></p></div>
+      <div class="dialog-source"><span data-i18n="dataNote">داده‌های مرجع تقریبی و گردآوری‌شده از منابع علمی عمومی‌اند.</span></div>
+    </div>
+  </dialog>
+  <div class="toast" id="toast" role="status"></div>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
